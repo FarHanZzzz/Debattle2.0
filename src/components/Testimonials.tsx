@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { Reveal } from './ui/Reveal'
 import { SectionHeader } from './ui/SectionHeader'
-import championAvatar from '../assets/avatar-champion.png'
-import runnerupAvatar from '../assets/avatar-runnerup.png'
 import wasiaPhoto from '../assets/wasia.jpg'
 import faizaPhoto from '../assets/faiza.jpg'
 import nidhiPhoto from '../assets/nidhi.jpg'

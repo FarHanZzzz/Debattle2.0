@@ -1,7 +1,9 @@
+import { useState } from 'react'
 import iubdcLogo from '../assets/iubdc-logo.png'
 import { Reveal } from './ui/Reveal'
 
 export function Organizer() {
+  const [showContact, setShowContact] = useState(false)
   return (
     <section id="organizer" className="section-padding section-surface-clear relative">
       <div className="section-container relative z-[5]">
@@ -31,12 +33,12 @@ export function Organizer() {
               >
                 Linktree
               </a>
-              <a href="mailto:debate@iub.edu.bd" className="btn-primary text-xs">
-                Contact Us
-              </a>
-              <a href="tel:+8801723241326" className="btn-secondary text-xs w-full sm:w-auto">
-                📞 +8801723241326 - Sudeepta Mohi (Head of Registration)
-              </a>
+              <button 
+                onClick={() => setShowContact(!showContact)}
+                className="btn-primary text-xs transition-all duration-300"
+              >
+                {showContact ? '📞 +8801723241326 - Sudeepta Mohi (Head of Registration)' : 'Contact Us'}
+              </button>
             </div>
           </div>
         </Reveal>

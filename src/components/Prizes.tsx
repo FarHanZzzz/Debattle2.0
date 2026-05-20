@@ -34,7 +34,7 @@ export function Prizes() {
           />
         </Reveal>
 
-        <div className="mt-12 grid items-stretch gap-10 lg:grid-cols-[1fr_1.3fr] lg:gap-14">
+        <div className="mt-12 grid items-stretch gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
           <SectionCharacter image={namiPrizes} name="Nami" position="left" />
           <div>
             <Reveal delay={0.08}>

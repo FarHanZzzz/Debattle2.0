@@ -18,7 +18,7 @@ export function Format() {
           />
         </Reveal>
 
-        <div className="mt-12 grid items-start gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-14">
+        <div className="mt-12 grid items-stretch gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-14">
           <SectionCharacter image={luffyFormat} name="Monkey D. Luffy" position="left" />
           <div className="grid gap-5">
             {FORMAT_STEPS.map((step, i) => (

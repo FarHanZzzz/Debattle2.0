@@ -19,7 +19,7 @@ export function SectionCharacter({
   return (
     <motion.div
       ref={ref}
-      className={`relative h-full min-h-[340px] md:min-h-[420px] overflow-hidden rounded-2xl ${
+      className={`relative w-full aspect-[4/5] md:aspect-[3/4] lg:aspect-auto lg:h-full lg:min-h-[550px] overflow-hidden rounded-2xl border border-purple-bright/30 shadow-[0_0_40px_-10px_rgba(147,51,234,0.4)] ${
         position === 'left' ? 'order-first' : 'order-last'
       }`}
       initial={{ opacity: 0, x: position === 'right' ? 60 : -60, scale: 0.95 }}

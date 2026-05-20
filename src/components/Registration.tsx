@@ -15,7 +15,7 @@ export function Registration() {
           />
         </Reveal>
 
-        <div className="mt-12 grid items-center gap-10 lg:grid-cols-[1fr_1.3fr] lg:gap-14">
+        <div className="mt-12 grid items-stretch gap-10 lg:grid-cols-[1fr_1.3fr] lg:gap-14">
           <SectionCharacter image={sanjiRegister} name="Sanji" position="left" />
           <Reveal delay={0.1}>
             <div className="glass-form flex flex-col items-center justify-center py-16 text-center">

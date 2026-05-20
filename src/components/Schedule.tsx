@@ -45,7 +45,7 @@ export function Schedule() {
           />
         </Reveal>
 
-        <div className="mt-12 grid items-start gap-10 lg:grid-cols-[1.3fr_1fr] lg:gap-14">
+        <div className="mt-12 grid items-stretch gap-10 lg:grid-cols-[1.3fr_1fr] lg:gap-14">
           <div className="grid gap-8">
             <Reveal delay={0.05}>
               <DayTimeline day="Day 1" label="Preliminary Rounds" items={SCHEDULE_DAY1} />

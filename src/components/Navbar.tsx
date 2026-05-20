@@ -47,7 +47,7 @@ export function Navbar() {
             >
               Debattle 2.0
             </span>
-            <span className="block text-[10px] tracking-wider text-ink-dim uppercase">
+            <span className="block text-[10px] tracking-wider text-white uppercase">
               Clash of Departments
             </span>
           </span>

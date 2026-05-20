@@ -443,15 +443,11 @@
   }
 
   .section-surface {
-    @apply relative;
-    background: linear-gradient(180deg, rgba(13, 5, 24, 0.75) 0%, rgba(6, 2, 15, 0.85) 100%);
-    backdrop-filter: blur(12px);
+    @apply relative bg-transparent;
   }
 
   .section-surface-lavender {
-    @apply relative;
-    background: linear-gradient(180deg, rgba(26, 10, 46, 0.8) 0%, rgba(13, 5, 24, 0.88) 100%);
-    backdrop-filter: blur(14px);
+    @apply relative bg-transparent;
   }
 
   .section-surface-clear {
@@ -459,20 +455,11 @@
   }
 
   .section-surface-prize {
-    @apply relative overflow-hidden;
-    background: linear-gradient(
-      180deg,
-      rgba(45, 16, 84, 0.85) 0%,
-      rgba(26, 10, 46, 0.9) 50%,
-      rgba(13, 5, 24, 0.92) 100%
-    );
-    backdrop-filter: blur(16px);
+    @apply relative overflow-hidden bg-transparent;
   }
 
   .section-surface-cool {
-    @apply relative;
-    background: linear-gradient(180deg, rgba(6, 20, 40, 0.7) 0%, rgba(13, 5, 24, 0.88) 100%);
-    backdrop-filter: blur(14px);
+    @apply relative bg-transparent;
   }
 
   .hero-badge {

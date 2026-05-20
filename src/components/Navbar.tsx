@@ -89,7 +89,7 @@ export function Navbar() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="glass-panel fixed inset-0 top-[60px] z-40 mx-4 mt-2 rounded-2xl md:hidden"
+          className="fixed inset-0 top-[60px] z-[100] mx-4 mt-2 h-fit max-h-[calc(100vh-80px)] overflow-y-auto rounded-2xl bg-[#0d0518] bg-opacity-95 border border-purple-bright/20 shadow-2xl backdrop-blur-xl md:hidden"
         >
           <ul className="flex flex-col gap-1 p-6">
             {NAV_LINKS.map((link) => (
@@ -97,7 +97,7 @@ export function Navbar() {
                 <a
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="block rounded-xl px-4 py-3 text-base text-ink-muted transition-colors hover:text-white"
+                  className="block rounded-xl px-4 py-3 text-base text-ink-muted transition-all hover:bg-white/5 hover:text-white active:bg-white/10"
                 >
                   {link.label}
                 </a>

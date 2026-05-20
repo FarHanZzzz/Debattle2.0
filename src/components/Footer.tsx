@@ -1,10 +1,6 @@
 import { Compass } from './ui/Compass'
 
-const SOCIAL = [
-  { label: 'Facebook', href: 'https://facebook.com' },
-  { label: 'Instagram', href: 'https://instagram.com' },
-  { label: 'LinkedIn', href: 'https://linkedin.com' },
-] as const
+
 
 export function Footer() {
   return (
@@ -25,19 +21,8 @@ export function Footer() {
             <Compass />
           </div>
 
-          <div className="flex gap-3">
-            {SOCIAL.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-purple-bright/25 text-ink-muted transition-all duration-300 hover:border-purple-bright/50 hover:text-white hover:shadow-[0_0_16px_rgba(192,132,252,0.4)]"
-                aria-label={link.label}
-              >
-                <span className="text-[10px] font-medium">{link.label[0]}</span>
-              </a>
-            ))}
+          <div className="hidden md:block w-32">
+            {/* Empty space to balance the flex container so compass stays centered if needed, or just let compass be at end */}
           </div>
         </div>
 

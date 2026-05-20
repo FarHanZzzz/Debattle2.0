@@ -3,10 +3,12 @@ import zoroSchedule from '../assets/zoro_schedule.png'
 import namiPrizes from '../assets/nami_prizes.png'
 import sanjiRegister from '../assets/sanji_register.png'
 import robinGallery from '../assets/robin_gallery.png'
+import lokiEquity from '../assets/loki_equity.jpg'
 
 export const NAV_LINKS = [
   { label: 'About', href: '#about' },
   { label: 'Format', href: '#format', character: 'Monkey D. Luffy', image: luffyFormat },
+  { label: 'Equity', href: '#equity', character: 'Prince Loki', image: lokiEquity },
   { label: 'Schedule', href: '#schedule', character: 'Roronoa Zoro', image: zoroSchedule },
   { label: 'Prizes', href: '#prizes', character: 'Nami', image: namiPrizes },
   { label: 'Register', href: '#register', character: 'Sanji', image: sanjiRegister },

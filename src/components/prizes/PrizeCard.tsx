@@ -49,15 +49,15 @@ export function PrizeCard({
       <span className="corner-flourish corner-flourish--br" aria-hidden />
 
       <p className="treasure-rank">{rank}</p>
-      <h3 className="mt-2 text-xl font-semibold text-white" style={{ fontFamily: 'var(--font-heading)' }}>
+      <h3 className="mt-2 text-lg lg:text-base xl:text-xl font-semibold text-white tracking-tight break-words" style={{ fontFamily: 'var(--font-heading)' }}>
         {tier}
       </h3>
 
-      {highlight && <p className="treasure-amount mt-3">{highlight}</p>}
+      {highlight && <p className="treasure-amount mt-2 xl:mt-3">{highlight}</p>}
 
-      <ul className="mt-5 space-y-2.5">
+      <ul className="mt-4 xl:mt-5 space-y-2">
         {items.map((item) => (
-          <li key={item} className="flex items-start gap-2 text-sm text-ink-muted">
+          <li key={item} className="flex items-start gap-2 text-xs xl:text-sm text-ink-muted leading-snug">
             <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-gold" />
             {item}
           </li>

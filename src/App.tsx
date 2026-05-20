@@ -5,6 +5,7 @@ import { SectionTransitions } from './components/background/SectionTransitions'
 import { About } from './components/About'
 import { Departments } from './components/Departments'
 import { Footer } from './components/Footer'
+import { EquityPolicy } from './components/EquityPolicy'
 import { Format } from './components/Format'
 import { Gallery } from './components/Gallery'
 import { Hero } from './components/Hero'
@@ -15,6 +16,7 @@ import { Prizes } from './components/Prizes'
 import { Registration } from './components/Registration'
 import { Schedule } from './components/Schedule'
 import { Stats } from './components/Stats'
+import { Testimonials } from './components/Testimonials'
 import { CustomCursor } from './components/ui/CustomCursor'
 import { ScrollSectionProvider } from './context/ScrollSectionContext'
 import { useGsapSections } from './hooks/useGsapSections'
@@ -36,11 +38,13 @@ function SiteContent() {
         <About />
         <Format />
         <Stats />
+        <EquityPolicy />
         <Departments />
         <Schedule />
         <Prizes />
         <Registration />
         <Gallery />
+        <Testimonials />
         <Organizer />
       </main>
       <Footer />

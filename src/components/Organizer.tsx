@@ -24,23 +24,18 @@ export function Organizer() {
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <a
-                href="https://www.facebook.com"
+                href="https://linktr.ee/IUB_Debate_Club"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary text-xs"
               >
-                Facebook
-              </a>
-              <a
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-secondary text-xs"
-              >
-                Instagram
+                Linktree
               </a>
               <a href="mailto:debate@iub.edu.bd" className="btn-primary text-xs">
                 Contact Us
+              </a>
+              <a href="tel:+8801723241326" className="btn-secondary text-xs w-full sm:w-auto">
+                📞 +8801723241326 - Sudeepta Mohi (Head of Registration)
               </a>
             </div>
           </div>

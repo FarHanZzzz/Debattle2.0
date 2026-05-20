@@ -29,7 +29,7 @@ export function Registration() {
                 We're managing registrations via our official portal. Click the button below to register your team.
               </p>
               <a
-                href="https://forms.google.com/"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdPv6_e032M2--PyyP2oZIUJF9N2AAPI3oyfB1sSAozGZeNgA/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"

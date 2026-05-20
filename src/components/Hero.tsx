@@ -89,7 +89,7 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            className="hidden md:block"
+            className="mt-12 lg:mt-0"
             initial={{ opacity: 0, x: 24 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1.8, duration: 1 }}

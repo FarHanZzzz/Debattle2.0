@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import { CanvasBackground } from './components/background/CanvasBackground'
 import { SectionCharacterLayer } from './components/background/SectionCharacterLayer'
 import { SectionTransitions } from './components/background/SectionTransitions'
@@ -70,6 +71,7 @@ export default function App() {
           </div>
         </ScrollSectionProvider>
       )}
+      <Analytics />
     </>
   )
 }

@@ -56,7 +56,8 @@ export function Hero() {
             >
               <p className="section-intro-band__text text-left lg:text-left">
                 A prestigious inter-department parliamentary debate voyage — where academic
-                rigor meets competitive spirit on the Grand Line of argumentation.
+                rigor meets competitive spirit on the Grand Line of argumentation.<br />
+                <span className="font-semibold text-purple-bright">#SailToDebattle</span>
               </p>
             </motion.div>
 
@@ -68,6 +69,7 @@ export function Hero() {
             >
               <span className="highlight-chip">June 19–20, 2026</span>
               <span className="highlight-chip">Independent University, Bangladesh</span>
+
             </motion.div>
 
             <motion.div

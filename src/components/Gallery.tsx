@@ -7,7 +7,7 @@ const GALLERY_PHOTOS = [
   {
     src: gallery1,
     title: 'Grand Final Stage',
-    caption: 'Debattle 1.0 — The house was packed for championship night. Click to view photo drive.',
+    caption: 'Debattle 1.0, where the house was packed for championship night. Click to view photo drive.',
     link: 'https://drive.google.com/drive/folders/1kQATjjtqsJV3wl5K2MzRYGBwmSgd-ZRI?usp=sharing',
   },
   {

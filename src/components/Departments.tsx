@@ -10,7 +10,7 @@ export function Departments() {
           <SectionHeader
             eyebrow="Participating departments"
             title="All hands on deck"
-            description="Twenty departments from across IUB — each bringing their finest debaters to the clash."
+            description="Twenty departments from across IUB, each bringing their finest debaters to the clash."
           />
         </Reveal>
 

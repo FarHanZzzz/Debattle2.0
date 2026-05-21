@@ -14,7 +14,7 @@ export function Format() {
           <SectionHeader
             eyebrow="Tournament format"
             title="Asian Parliamentary structure"
-            description="Navigate five stages of competition — from opening salvos to the championship final."
+            description="Navigate five stages of competition from opening salvos to the championship final."
           />
         </Reveal>
 

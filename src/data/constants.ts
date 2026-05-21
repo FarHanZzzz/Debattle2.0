@@ -72,10 +72,10 @@ export const DEPARTMENTS = [
 export const SCHEDULE_DAY1 = [
   { time: '08:30', event: 'Registration & Check-in' },
   { time: '09:30', event: 'Opening Ceremony' },
-  { time: '10:30', event: 'Preliminary Round 1 — English' },
+  { time: '10:30', event: 'Preliminary Round 1 (English)' },
   { time: '12:30', event: 'Lunch Break' },
-  { time: '13:30', event: 'Preliminary Round 2 — Bangla' },
-  { time: '15:30', event: 'Preliminary Round 3 — English' },
+  { time: '13:30', event: 'Preliminary Round 2 (Bangla)' },
+  { time: '15:30', event: 'Preliminary Round 3 (English)' },
   { time: '17:00', event: 'Day 1 Closing & Announcements' },
 ] as const
 
@@ -83,8 +83,8 @@ export const SCHEDULE_DAY2 = [
   { time: '09:00', event: 'Semifinal Round 1' },
   { time: '11:00', event: 'Semifinal Round 2' },
   { time: '12:30', event: 'Lunch Break' },
-  { time: '14:00', event: 'Grand Final — English' },
-  { time: '16:00', event: 'Grand Final — Bangla' },
+  { time: '14:00', event: 'Grand Final (English)' },
+  { time: '16:00', event: 'Grand Final (Bangla)' },
   { time: '17:30', event: 'Awards Ceremony & Closing' },
 ] as const
 
@@ -116,7 +116,7 @@ export const PRIZES = [
 export const GALLERY_ITEMS = [
   {
     title: 'Grand Final Stage',
-    caption: 'Debattle 1.0 — The house was packed for championship night.',
+    caption: 'Debattle 1.0, where the house was packed for championship night.',
     gradient: 'from-purple-soft/80 to-white',
   },
   {

@@ -6,7 +6,7 @@ import { SectionCharacter } from './ui/SectionCharacter'
 const CARDS = [
   {
     title: 'Academic Prestige',
-    text: "Bangladesh's leading university debate platform — where departments prove their rhetorical mastery.",
+    text: "Bangladesh's leading university debate platform, where departments prove their rhetorical mastery.",
     icon: '◆',
   },
   {
@@ -16,7 +16,7 @@ const CARDS = [
   },
   {
     title: 'Grand Voyage',
-    text: 'Inspired by adventure and discovery — every round is a new island of ideas to conquer.',
+    text: 'Inspired by adventure and discovery, every round is a new island of ideas to conquer.',
     icon: '⚓',
   },
 ]
@@ -29,7 +29,7 @@ export function About() {
           <SectionHeader
             eyebrow="About the tournament"
             title="Set sail for the ultimate clash"
-            description="Debattle 2.0 returns as IUBDC's flagship inter-department tournament — a two-day parliamentary debate expedition where twenty departments navigate rigorous AP rounds across English and Bangla segments."
+            description="Debattle 2.0 returns as IUBDC's flagship inter-department tournament, a two-day parliamentary debate expedition where twenty departments navigate rigorous AP rounds across English and Bangla segments."
           />
         </Reveal>
 

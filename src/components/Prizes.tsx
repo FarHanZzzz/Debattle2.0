@@ -30,7 +30,7 @@ export function Prizes() {
           <SectionHeader
             eyebrow="Prize pool"
             title="Treasures of the tournament"
-            description="Awarded across team championships and individual honors — a bounty worthy of the Grand Line."
+            description="Awarded across team championships and individual honors, offering a bounty worthy of the Grand Line."
           />
         </Reveal>
 

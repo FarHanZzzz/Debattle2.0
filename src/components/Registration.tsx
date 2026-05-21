@@ -11,7 +11,7 @@ export function Registration() {
           <SectionHeader
             eyebrow="Registration"
             title="Join the voyage"
-            description="Register your team for Debattle 2.0. Slots are limited — secure your place early."
+            description="Register your team for Debattle 2.0. Slots are limited, so secure your place early."
           />
         </Reveal>
 

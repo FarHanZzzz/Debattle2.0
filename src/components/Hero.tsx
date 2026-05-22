@@ -21,14 +21,7 @@ export function Hero() {
           transition={{ duration: 1, delay: 1.4 }}
         >
           <motion.div className="flex flex-col justify-center text-center lg:text-left">
-            <motion.span
-              className="hero-badge mx-auto lg:mx-0"
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.5 }}
-            >
-              Grand Line Tournament · Season 01
-            </motion.span>
+
 
             <motion.h1
               className="heading-display mt-6 lg:text-6xl xl:text-7xl"

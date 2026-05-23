@@ -99,14 +99,16 @@ export const PRIZE_POOL_TOTAL = 'BDT 50,000'
 export const PRIZES = [
   {
     tier: 'Champions',
-    highlight: 'BDT 25,000',
+    highlight: 'BDT 15,000',
+    subHighlight: 'Per Segment (English & Bangla)',
     items: ['Championship Trophy', 'Team Prize Pool', 'IUBDC Champion Medallions'],
     accent: 'gold' as const,
     featured: true,
   },
   {
     tier: 'Runners-up',
-    highlight: 'BDT 15,000',
+    highlight: 'BDT 10,000',
+    subHighlight: 'Per Segment (English & Bangla)',
     items: ['Runner-up Trophy', 'Team Prize Pool', 'Recognition Certificates'],
     accent: 'purple' as const,
     featured: false,

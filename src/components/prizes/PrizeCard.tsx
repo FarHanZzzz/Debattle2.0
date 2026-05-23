@@ -5,6 +5,7 @@ type PrizeCardProps = {
   rank: string
   tier: string
   highlight?: string
+  subHighlight?: string
   items: readonly string[]
   orderClass: 'treasure-card--first' | 'treasure-card--second' | 'treasure-card--third'
   delay?: number
@@ -14,6 +15,7 @@ export function PrizeCard({
   rank,
   tier,
   highlight,
+  subHighlight,
   items,
   orderClass,
   delay = 0,
@@ -53,7 +55,16 @@ export function PrizeCard({
         {tier}
       </h3>
 
-      {highlight && <p className="treasure-amount mt-2 xl:mt-3">{highlight}</p>}
+      {highlight && (
+        <div className="mt-2 xl:mt-3">
+          <p className="treasure-amount">{highlight}</p>
+          {subHighlight && (
+            <p className="text-sm text-gold/80 mt-1 font-medium tracking-wide" style={{ fontFamily: 'var(--font-heading)' }}>
+              {subHighlight}
+            </p>
+          )}
+        </div>
+      )}
 
       <ul className="mt-4 xl:mt-5 space-y-2">
         {items.map((item) => (

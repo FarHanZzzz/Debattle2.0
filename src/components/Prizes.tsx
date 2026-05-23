@@ -51,6 +51,7 @@ export function Prizes() {
                   rank={RANKS[prize.tier] ?? 'Award'}
                   tier={prize.tier}
                   highlight={'highlight' in prize ? prize.highlight : undefined}
+                  subHighlight={'subHighlight' in prize ? prize.subHighlight : undefined}
                   items={prize.items}
                   orderClass={ORDER[prize.tier]}
                   delay={i * 0.12}

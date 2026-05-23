@@ -26,16 +26,27 @@ export function Registration() {
                 Ready to set sail?
               </h3>
               <p className="section-lead mb-8 max-w-md">
-                We're managing registrations via our official portal. Click the button below to register your team.
+                We're managing registrations via our official portal. Click the button below to register your team. <br/>
+                <span className="text-purple-bright font-semibold mt-2 block">Note: Reading the Rulebook is a must before Registering.</span>
               </p>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdPv6_e032M2--PyyP2oZIUJF9N2AAPI3oyfB1sSAozGZeNgA/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary"
-              >
-                Register via Google Form
-              </a>
+              <div className="flex flex-wrap items-center justify-center gap-4">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdPv6_e032M2--PyyP2oZIUJF9N2AAPI3oyfB1sSAozGZeNgA/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary"
+                >
+                  Register via Google Form
+                </a>
+                <a
+                  href="https://docs.google.com/document/d/1JM2TF_KbN0RBUyhwu188dWCkAOd9fu9Z_bB_IJvS-as/edit?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary border-purple-bright text-white shadow-[0_0_20px_rgba(192,132,252,0.5)] hover:shadow-[0_0_30px_rgba(192,132,252,0.8)]"
+                >
+                  Rulebook
+                </a>
+              </div>
             </div>
           </Reveal>
         </div>

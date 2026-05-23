@@ -29,7 +29,7 @@ export function About() {
           <SectionHeader
             eyebrow="About the tournament"
             title="Set sail for the ultimate clash"
-            description="Debattle 2.0 returns as IUBDC's flagship inter-department tournament, a two-day parliamentary debate expedition where twenty departments navigate rigorous AP rounds across English and Bangla segments."
+            description="Debattle 2.0 returns as IUBDC's flagship intra-department tournament, a two-day parliamentary debate expedition where twenty departments navigate rigorous AP rounds across English and Bangla segments."
           />
         </Reveal>
 

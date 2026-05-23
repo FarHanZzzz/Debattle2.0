@@ -48,7 +48,7 @@ export function Hero() {
               transition={{ delay: 1.85 }}
             >
               <p className="section-intro-band__text text-left lg:text-left">
-                A prestigious inter-department parliamentary debate voyage this is where academic
+                A prestigious intra-department parliamentary debate voyage this is where academic
                 rigor meets competitive spirit on the Grand Line of argumentation.<br />
                 <span className="font-semibold text-purple-bright">#SailToDebattle</span>
               </p>
@@ -76,9 +76,6 @@ export function Hero() {
               </a>
               <a href="#schedule" className="btn-secondary">
                 View Schedule
-              </a>
-              <a href="#format" className="btn-secondary">
-                Rulebook
               </a>
             </motion.div>
           </motion.div>

@@ -57,7 +57,7 @@ export function Stats() {
         <SectionHeader
           eyebrow="By the numbers"
           title="A fleet of debaters"
-          description="The largest inter-department parliamentary clash at IUB, built for scale, rigor, and championship-level competition."
+          description="The largest intra-department parliamentary clash at IUB, built for scale, rigor, and championship-level competition."
         />
 
         <div className="stats-grid mt-12">

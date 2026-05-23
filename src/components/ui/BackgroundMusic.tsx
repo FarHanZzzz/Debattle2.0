@@ -9,7 +9,7 @@ export function BackgroundMusic() {
   useEffect(() => {
     audioRef.current = new Audio(audioSrc)
     audioRef.current.loop = true
-    audioRef.current.volume = 0.25
+    audioRef.current.volume = 0.30
 
     return () => {
       if (audioRef.current) {

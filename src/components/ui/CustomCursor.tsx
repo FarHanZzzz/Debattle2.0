@@ -45,11 +45,16 @@ export function CustomCursor() {
       ringEl.classList.toggle('cursor-ring--hover', on)
     }
 
+    let rafId: number
     const onMove = (e: MouseEvent) => {
       const { clientX: x, clientY: y } = e
-      setPos(dot, x, y)
-      setPos(ringEl, x, y)
-      show()
+      
+      cancelAnimationFrame(rafId)
+      rafId = requestAnimationFrame(() => {
+        setPos(dot, x, y)
+        setPos(ringEl, x, y)
+        show()
+      })
     }
 
     const onOver = (e: Event) => {
@@ -64,6 +69,7 @@ export function CustomCursor() {
     document.documentElement.addEventListener('mouseenter', show)
 
     return () => {
+      cancelAnimationFrame(rafId)
       document.body.classList.remove('custom-cursor-active')
       window.removeEventListener('mousemove', onMove)
       document.removeEventListener('mouseover', onOver, true)

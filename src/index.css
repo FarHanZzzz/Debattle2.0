@@ -347,7 +347,7 @@
   }
 
   .schedule-item__time {
-    @apply w-16 shrink-0 text-right text-sm font-bold text-cyan sm:w-[4.5rem] sm:text-base;
+    @apply w-20 shrink-0 text-right text-sm font-bold text-cyan sm:w-24 sm:text-base;
     font-family: var(--font-heading);
     text-shadow: 0 0 12px rgba(34, 211, 238, 0.35);
   }
@@ -358,7 +358,7 @@
   }
 
   .schedule-item__line {
-    @apply absolute top-7 left-[4.5rem] h-[calc(100%-0.5rem)] w-px sm:left-[5.25rem];
+    @apply absolute top-7 left-[105px] h-[calc(100%-0.5rem)] w-px sm:left-[121px];
     background: rgba(192, 132, 252, 0.2);
   }
 

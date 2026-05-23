@@ -70,22 +70,22 @@ export const DEPARTMENTS = [
 ] as const
 
 export const SCHEDULE_DAY1 = [
-  { time: '08:30', event: 'Registration & Check-in' },
-  { time: '09:30', event: 'Opening Ceremony' },
-  { time: '10:30', event: 'Preliminary Round 1 (English)' },
-  { time: '12:30', event: 'Lunch Break' },
-  { time: '13:30', event: 'Preliminary Round 2 (Bangla)' },
-  { time: '15:30', event: 'Preliminary Round 3 (English)' },
-  { time: '17:00', event: 'Day 1 Closing & Announcements' },
+  { time: '08:30 AM', event: 'Registration & Check-in' },
+  { time: '09:30 AM', event: 'Opening Ceremony' },
+  { time: '10:30 AM', event: 'Preliminary Round 1 (English)' },
+  { time: '12:30 PM', event: 'Lunch Break' },
+  { time: '01:30 PM', event: 'Preliminary Round 2 (Bangla)' },
+  { time: '03:30 PM', event: 'Preliminary Round 3 (English)' },
+  { time: '05:00 PM', event: 'Day 1 Closing & Announcements' },
 ] as const
 
 export const SCHEDULE_DAY2 = [
-  { time: '09:00', event: 'Semifinal Round 1' },
-  { time: '11:00', event: 'Semifinal Round 2' },
-  { time: '12:30', event: 'Lunch Break' },
-  { time: '14:00', event: 'Grand Final (English)' },
-  { time: '16:00', event: 'Grand Final (Bangla)' },
-  { time: '17:30', event: 'Awards Ceremony & Closing' },
+  { time: '09:00 AM', event: 'Semifinal Round 1' },
+  { time: '11:00 AM', event: 'Semifinal Round 2' },
+  { time: '12:30 PM', event: 'Lunch Break' },
+  { time: '02:00 PM', event: 'Grand Final (English)' },
+  { time: '04:00 PM', event: 'Grand Final (Bangla)' },
+  { time: '05:30 PM', event: 'Awards Ceremony & Closing' },
 ] as const
 
 export const PRIZE_POOL_TOTAL = 'BDT 50,000'

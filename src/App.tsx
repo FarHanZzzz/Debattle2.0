@@ -19,6 +19,7 @@ import { Schedule } from './components/Schedule'
 import { Stats } from './components/Stats'
 import { Testimonials } from './components/Testimonials'
 import { CustomCursor } from './components/ui/CustomCursor'
+import { BackgroundMusic } from './components/ui/BackgroundMusic'
 import { ScrollSectionProvider } from './context/ScrollSectionContext'
 import { useGsapSections } from './hooks/useGsapSections'
 import { useSmoothScroll } from './hooks/useSmoothScroll'
@@ -33,6 +34,7 @@ function SiteContent() {
       <SectionTransitions />
       <SectionCharacterLayer />
       <CustomCursor />
+      <BackgroundMusic />
       <Navbar />
       <main>
         <Hero />

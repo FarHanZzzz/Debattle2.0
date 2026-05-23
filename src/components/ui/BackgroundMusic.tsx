@@ -37,10 +37,10 @@ export function BackgroundMusic() {
   }
 
   return (
-    <div className="fixed bottom-4 left-4 z-[100] flex items-center justify-center rounded-full bg-purple-void/85 border border-purple-bright/30 p-1 backdrop-blur-md shadow-2xl transition-all duration-300 hover:border-gold/50 hover:scale-105">
+    <div className="fixed bottom-4 left-4 z-[100] flex items-center justify-center rounded-full bg-purple-void/85 border border-purple-bright/20 p-1 backdrop-blur-md shadow-2xl transition-all duration-500 hover:border-gold/50 hover:scale-105 opacity-45 hover:opacity-100 group">
       <button
         onClick={togglePlay}
-        className="flex h-7 w-7 items-center justify-center rounded-full bg-purple-glow text-white shadow-lg transition-transform duration-300 active:scale-95 cursor-pointer hover:bg-purple-bright"
+        className="flex h-7 w-7 items-center justify-center rounded-full bg-purple-deep/40 border border-purple-bright/10 text-purple-soft/50 shadow-lg transition-all duration-300 active:scale-95 cursor-pointer group-hover:bg-purple-glow group-hover:text-white group-hover:border-gold/40"
         aria-label={isPlaying ? 'Pause Music' : 'Play Music'}
       >
         {isPlaying ? (

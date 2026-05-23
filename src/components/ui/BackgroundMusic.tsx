@@ -7,11 +7,55 @@ export function BackgroundMusic() {
   const audioSrc = '/videoplayback.mp3'
 
   useEffect(() => {
-    audioRef.current = new Audio(audioSrc)
-    audioRef.current.loop = true
-    audioRef.current.volume = 0.30
+    const audio = new Audio(audioSrc)
+    audio.loop = true
+    audio.volume = 0.30
+    audioRef.current = audio
+
+    const startAudio = () => {
+      audio.play()
+        .then(() => {
+          setIsPlaying(true)
+          cleanup()
+        })
+        .catch(() => {
+          // Autoplay blocked by browser policy, fallback to waiting for interaction
+        })
+    }
+
+    const handleInteraction = () => {
+      if (audioRef.current) {
+        audioRef.current.play()
+          .then(() => {
+            setIsPlaying(true)
+            cleanup()
+          })
+          .catch((err) => {
+            console.log("Failed to play on interaction:", err)
+          })
+      }
+    }
+
+    const cleanup = () => {
+      window.removeEventListener('click', handleInteraction)
+      window.removeEventListener('keydown', handleInteraction)
+      window.removeEventListener('touchstart', handleInteraction)
+      window.removeEventListener('mousedown', handleInteraction)
+      window.removeEventListener('pointerdown', handleInteraction)
+    }
+
+    // Try playing immediately
+    startAudio()
+
+    // Add listeners as fallback
+    window.addEventListener('click', handleInteraction)
+    window.addEventListener('keydown', handleInteraction)
+    window.addEventListener('touchstart', handleInteraction)
+    window.addEventListener('mousedown', handleInteraction)
+    window.addEventListener('pointerdown', handleInteraction)
 
     return () => {
+      cleanup()
       if (audioRef.current) {
         audioRef.current.pause()
         audioRef.current = null

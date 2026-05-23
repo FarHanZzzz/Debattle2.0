@@ -70,22 +70,28 @@ export const DEPARTMENTS = [
 ] as const
 
 export const SCHEDULE_DAY1 = [
-  { time: '08:30 AM', event: 'Registration & Check-in' },
-  { time: '09:30 AM', event: 'Opening Ceremony' },
-  { time: '10:30 AM', event: 'Preliminary Round 1 (English)' },
-  { time: '12:30 PM', event: 'Lunch Break' },
-  { time: '01:30 PM', event: 'Preliminary Round 2 (Bangla)' },
-  { time: '03:30 PM', event: 'Preliminary Round 3 (English)' },
-  { time: '05:00 PM', event: 'Day 1 Closing & Announcements' },
+  { time: '9:00 AM', event: 'Reporting & Registration' },
+  { time: '9:30 AM', event: 'Session' },
+  { time: '10:30 AM', event: 'Welcome Speech & Briefing - debate' },
+  { time: '11:00 AM', event: 'Motion Release (Round 1)' },
+  { time: '11:15 AM', event: 'Round 1 Debate' },
+  { time: '2:30 PM', event: 'Motion Release (Round 2)' },
+  { time: '2:45 PM', event: 'Round 2' },
+  { time: '3:45 PM', event: 'Break' },
+  { time: '4:00 PM', event: 'Motion Release (Round 3)' },
+  { time: '4:15 PM', event: 'Round 3' },
+  { time: '5:30 PM', event: 'Break Announcement & Closing remarks' },
 ] as const
 
 export const SCHEDULE_DAY2 = [
-  { time: '09:00 AM', event: 'Semifinal Round 1' },
-  { time: '11:00 AM', event: 'Semifinal Round 2' },
-  { time: '12:30 PM', event: 'Lunch Break' },
-  { time: '02:00 PM', event: 'Grand Final (English)' },
-  { time: '04:00 PM', event: 'Grand Final (Bangla)' },
-  { time: '05:30 PM', event: 'Awards Ceremony & Closing' },
+  { time: '12:00 PM', event: 'Reporting & Briefing' },
+  { time: '1:00 PM', event: 'Break' },
+  { time: '1:30 PM', event: 'Motion Release (Semifinals)' },
+  { time: '1:45 PM', event: 'Semifinals Round' },
+  { time: '2:45 PM', event: 'Break' },
+  { time: '3:30 PM', event: 'Motion Release (Finals)' },
+  { time: '3:45 PM', event: 'Final Round' },
+  { time: '4:45 PM', event: 'Award Ceremony & Closing Speech' },
 ] as const
 
 export const PRIZE_POOL_TOTAL = 'BDT 50,000'

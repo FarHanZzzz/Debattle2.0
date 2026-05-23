@@ -11,40 +11,48 @@ export function Stats() {
     const section = sectionRef.current
     if (!section) return
 
+    let rafId: number
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (!entry.isIntersecting || animated.current) return
         animated.current = true
 
         const duration = 1600
-        const start = performance.now()
         const targets = STATS.map((s) => s.value)
+        let start: number | null = null
 
         const tick = (now: number) => {
-          const t = Math.min((now - start) / duration, 1)
+          if (!start) start = now
+          const t = Math.min(Math.max((now - start) / duration, 0), 1)
           const eased = 1 - Math.pow(1 - t, 3)
 
           STATS.forEach((stat, i) => {
             const el = numberRefs.current[i]
             if (!el) return
-            const v = Math.floor(eased * targets[i])
+            const v = t === 1 ? targets[i] : Math.floor(eased * targets[i])
             el.textContent =
               'format' in stat && stat.format
                 ? v.toLocaleString('en-BD')
                 : String(v)
           })
 
-          if (t < 1) requestAnimationFrame(tick)
+          if (t < 1) {
+            rafId = requestAnimationFrame(tick)
+          }
         }
 
-        requestAnimationFrame(tick)
+        rafId = requestAnimationFrame(tick)
         observer.disconnect()
       },
       { threshold: 0.25, rootMargin: '0px 0px -10% 0px' },
     )
 
     observer.observe(section)
-    return () => observer.disconnect()
+    return () => {
+      observer.disconnect()
+      cancelAnimationFrame(rafId)
+    }
   }, [])
 
   return (

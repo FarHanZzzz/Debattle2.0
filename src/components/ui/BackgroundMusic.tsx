@@ -37,10 +37,14 @@ export function BackgroundMusic() {
   }
 
   return (
-    <div className="fixed bottom-4 left-4 z-[100] flex items-center justify-center rounded-full bg-purple-void/85 border border-purple-bright/20 p-1 backdrop-blur-md shadow-2xl transition-all duration-500 hover:border-gold/50 hover:scale-105 opacity-45 hover:opacity-100 group">
+    <div className="fixed bottom-4 left-4 z-[100] flex items-center justify-center rounded-full bg-purple-void/85 border border-purple-bright/40 p-1 backdrop-blur-md shadow-[0_0_20px_rgba(147,51,234,0.3)] transition-all duration-300 hover:border-gold/50 hover:scale-105">
       <button
         onClick={togglePlay}
-        className="flex h-7 w-7 items-center justify-center rounded-full bg-purple-deep/40 border border-purple-bright/10 text-purple-soft/50 shadow-lg transition-all duration-300 active:scale-95 cursor-pointer group-hover:bg-purple-glow group-hover:text-white group-hover:border-gold/40"
+        className={`flex h-7 w-7 items-center justify-center rounded-full transition-all duration-300 active:scale-95 cursor-pointer ${
+          isPlaying
+            ? 'bg-purple-bright text-purple-void shadow-[0_0_12px_rgba(192,132,252,0.9)] hover:bg-gold hover:shadow-[0_0_12px_rgba(251,191,36,0.9)]'
+            : 'bg-purple-glow text-white shadow-[0_0_10px_rgba(147,51,234,0.6)] hover:bg-purple-bright hover:shadow-[0_0_12px_rgba(192,132,252,0.8)]'
+        }`}
         aria-label={isPlaying ? 'Pause Music' : 'Play Music'}
       >
         {isPlaying ? (

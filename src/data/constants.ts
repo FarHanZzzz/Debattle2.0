@@ -70,28 +70,24 @@ export const DEPARTMENTS = [
 ] as const
 
 export const SCHEDULE_DAY1 = [
-  { time: '9:00 AM', event: 'Reporting & Registration' },
-  { time: '9:30 AM', event: 'Session' },
-  { time: '10:30 AM', event: 'Welcome Speech & Briefing - debate' },
-  { time: '11:00 AM', event: 'Motion Release (Round 1)' },
-  { time: '11:15 AM', event: 'Round 1 Debate' },
-  { time: '2:30 PM', event: 'Motion Release (Round 2)' },
-  { time: '2:45 PM', event: 'Round 2' },
-  { time: '3:45 PM', event: 'Break' },
-  { time: '4:00 PM', event: 'Motion Release (Round 3)' },
-  { time: '4:15 PM', event: 'Round 3' },
-  { time: '5:30 PM', event: 'Break Announcement & Closing remarks' },
+  { time: '8:30 AM', event: 'Reporting & Registration' },
+  { time: '9:00 AM', event: 'Round 1: Motion Release & Debate' },
+  { time: '11:00 AM', event: 'Round 2: Motion Release & Debate' },
+  { time: '1:00 PM', event: 'Lunch & Prayer Break' },
+  { time: '2:00 PM', event: 'Round 3: Motion Release & Debate' },
+  { time: '4:00 PM', event: 'Round 4: Motion Release & Debate' },
+  { time: '6:30 PM', event: 'Tabulation & Break Announcement' },
+  { time: '8:00 PM', event: 'Ending' },
 ] as const
 
 export const SCHEDULE_DAY2 = [
-  { time: '12:00 PM', event: 'Reporting & Briefing' },
-  { time: '1:00 PM', event: 'Break' },
-  { time: '1:30 PM', event: 'Motion Release (Semifinals)' },
-  { time: '1:45 PM', event: 'Semifinals Round' },
-  { time: '2:45 PM', event: 'Break' },
-  { time: '3:30 PM', event: 'Motion Release (Finals)' },
-  { time: '3:45 PM', event: 'Final Round' },
-  { time: '4:45 PM', event: 'Award Ceremony & Closing Speech' },
+  { time: '10:00 AM', event: 'Reporting' },
+  { time: '10:30 AM', event: 'Pre-Semifinals: Motion Release & Debate' },
+  { time: '12:00 PM', event: 'Semifinals: Motion Release & Debate' },
+  { time: '2:00 PM', event: 'Lunch Break' },
+  { time: '3:00 PM', event: 'Finals: Motion Release & Debate' },
+  { time: '5:30 PM', event: 'Award Ceremony & Closing Speech' },
+  { time: '8:00 PM', event: 'Grand Dinner' },
 ] as const
 
 export const PRIZE_POOL_TOTAL = 'BDT 50,000'

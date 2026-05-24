@@ -37,8 +37,15 @@ export function Organizer() {
                 onClick={() => setShowContact(!showContact)}
                 className="btn-primary text-xs transition-all duration-300"
               >
-                {showContact ? '📞 +8801723241326 - Sudeepta Mohi (Head of Registration)' : 'Contact Us'}
+                {showContact ? 'Hide Contacts' : 'Contact Us'}
               </button>
+              {showContact && (
+                <div className="mt-4 w-full flex flex-col items-center gap-2 text-sm text-white/90">
+                  <span>📞 +8801723241326 — Sudeepta Mohi</span>
+                  <span>📞 +8801712395402 — Adrika Das Asha</span>
+                  <span>📞 +8801725289336 — Fatema Mim</span>
+                </div>
+              )}
             </div>
           </div>
         </Reveal>
